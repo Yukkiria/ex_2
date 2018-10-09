@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Sofya Boeva</string>
+    <string name="textmpei">Студентка НИУ МЭИ, 6 курс</string>
+    <string name="textswim">Плавание</string>
+    <string name="aboutmyself">На самом деле, довольно трудно написать о себе. Но попробовать все-таки стоит.
+    Сама родом из Балашихи (Московская область), училась там,потом в мск в лицее при МЭИ,а потом поступила и в сам МЭИ.
+        Я тогда точно не знала,чего я хочу от жизни,но точно знала,что должно быть техническое направление и что-то связанное с компьютерами.
+        Поэтому выбрала направление на программиста. Мои личные увлечения, отдельно от программирования - это...пожалуй, кулинария,а именно готовка десертов,
+        доставляет мне огромнейшее удовольствие:) А также изучение психологии довольно сильно меня увлекает.
+        Ну, из спорта, с 5 лет занималась плаванием..где-то до 20 лет ,и имею второй взрослый разряд) Было множество соревнований городских, где
+        испытала столько эмоций, как положительных, так и отрицательных.
+    </string>
+    <string name="message">Enter a message</string>
+    <string name="send_message">SEND MESSAGE </string>
+    <string name="email_adr">mailto:%s</string>
+    <string name="enter_message">Введите сообщение</string>
+    <string name="btn_send">Отправить</string>
+    <string name="vk_url">https://vk.com/sonki</string>
+    <string name="tg_url">https://t.me/sofya_boeva</string>
+    <string name="insta_url">https://www.instagram.com/sofya_boeva/</string>
+    <string name="a_text">Софья Боева</string>
+    <string name="err">error</string>
+    <string name="footer_text">© 2018 Boeva</string>
+</resources>

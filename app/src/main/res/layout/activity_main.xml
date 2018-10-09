@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comp.yukkina.ex_2.MainActivity"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/li_glav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/li_layout_stud"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imgview_photo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/photo_height"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/photo"
+                tools:ignore="ContentDescription" />
+
+
+            <LinearLayout
+                android:id="@+id/cardview_lilayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/content"
+                tools:ignore="UseCompoundDrawables">
+
+                <LinearLayout
+                    android:id="@+id/li_stud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_size"
+                        android:layout_height="@dimen/icon_size"
+                        app:srcCompat="@drawable/mpei"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/content"
+                        android:text="@string/textmpei"
+                        tools:ignore="ContentDescription"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/swim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_size"
+                        android:layout_height="@dimen/icon_size"
+                        app:srcCompat="@drawable/swim"
+                        tools:ignore="ContentDescription"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/content"
+                        android:text="@string/textswim"
+                        tools:ignore="ContentDescription"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+                <TextView
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/content"
+                    android:text="@string/aboutmyself"
+                    tools:ignore="ContentDescription"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_txt_message"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/enter_message"
+                    android:inputType="textAutoCorrect"
+                    android:textSize="@dimen/textsize" />
+
+                <Button
+                    android:id="@+id/btn_send"
+                    style="@style/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_send"
+                    android:textSize="@dimen/textsize"
+                    android:background="@drawable/button_main"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:id="@+id/icons">
+                <ImageButton
+                    android:id="@+id/tg"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:padding="@dimen/padding"
+                    app:srcCompat="@drawable/tg"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/white"
+                    />
+                <ImageButton
+                    android:id="@+id/insta"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:padding="@dimen/padding"
+                    app:srcCompat="@drawable/insta"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/white"
+                    />
+                <ImageButton
+                    android:id="@+id/vk"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:padding="@dimen/padding"
+                    app:srcCompat="@drawable/vk"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/white"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
