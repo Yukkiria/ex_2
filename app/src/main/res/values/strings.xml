@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sofya Boeva</string>
+    <string name="app_name">News</string>
     <string name="textmpei">Студентка НИУ МЭИ, 6 курс</string>
     <string name="textswim">Плавание</string>
     <string name="aboutmyself">На самом деле, довольно трудно написать о себе. Но попробовать все-таки стоит.
@@ -21,4 +21,6 @@
     <string name="a_text">Софья Боева</string>
     <string name="err">error</string>
     <string name="footer_text">© 2018 Boeva</string>
+    <string name="activity_news_title">News</string>
+    <string name="action_about">About</string>
 </resources>

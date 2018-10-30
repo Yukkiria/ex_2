@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:padding="@dimen/padding"
+    android:elevation="@dimen/elevation"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0.0px"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    card_view:cardElevation="10dp"
+    card_view:cardPreventCornerOverlap="false"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_news_list"
+    tools:showIn="@layout/activity_news_list">
+
+    <TextView
+        android:id="@+id/item_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/cities" />
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="@dimen/image_view"
+        android:layout_height="@dimen/image_view"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:textAppearance="@style/text_card_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_title"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="casual"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:textSize="@dimen/textsize"
+        app:layout_constraintEnd_toStartOf="@+id/item_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_category"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/item_preview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marg_top"
+        android:layout_marginEnd="@dimen/marg_end_bott"
+        android:layout_marginBottom="@dimen/marg_end_bott"
+        android:fontFamily="casual"
+        android:maxLines="5"
+        app:layout_constraintBottom_toTopOf="@id/item_date"
+        app:layout_constraintEnd_toStartOf="@+id/item_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_title"
+        tools:text="@tools:sample/lorem" />
+
+    <TextView
+        android:id="@+id/item_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marg_end_bott"
+        android:fontFamily="monospace"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_image"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@tools:sample/date/ddmmyy" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

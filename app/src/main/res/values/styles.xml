@@ -12,5 +12,7 @@
         <item name="android:fontFamily">sans-serif-light</item>
 
     </style>
-
+    <style name="text_card_view">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
 </resources>
